@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/base.css')
+
+
+  body
+    h1 #{timestamp}
+    block content
+    script(type='text/javascript', src='/js/jsweixin-1.0.0.js')
+    script(type='text/javascript').
+        wx.config({
+            debug: true,
+            appId: 'wx18687653dfdf6f4e',
+            timestamp: '#{timestamp}',
+            nonceStr: '990218735',
+            signature: '#{signature}',
+            jsApiList: [
+                'checkJsApi',
+                'onMenuShareAppMessage',
+                'chooseImage',
+            ]
+        })

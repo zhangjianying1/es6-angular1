@@ -1,0 +1,32 @@
+<div class="apply-exchange">
+    <div class="coupon-list">
+        <div class="coupon-box" ng-repeat="coupon in couponPrice" ng-click="selectHandler(coupon)" ng-class="{active: coupon.className=='active' , disabled: coupon.className== 'disabled'}">
+            <div class="coupon-point">
+                {{coupon.price}}券点
+            </div>
+            <em class="coupon-price"><i>￥</i>{{coupon.price / 100}}</em>
+        </div>
+
+    </div>
+    <div class="coupon-exchange">
+        <ul>
+            <li class="modal-list">
+                <div><p>点券余额</p></div>
+                <div><em>{{couponCount}}点</em></div>
+            </li>
+            <li  class="modal-list">
+                <div><p>可兑换卡券数量</p></div>
+                <div>
+                    <div class="count-control">
+                        <em ng-click="reduce()">-</em><input type="tel"  ng-change="input()" ng-model="couponNumber" /><em ng-click="plus()">+</em>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <p>本次兑换将消耗<em class="c-red">{{couponNumber * activePrice}}</em>券点；可兑换<em class="c-red">{{activePrice / 100}}元</em>
+            卡券<em class="c-red">{{couponNumber}}</em>张剩余<em class="c-red">{{couponCount-couponNumber*activePrice}}</em>券点</p>
+        <div class="immediately-exchange">
+            <a href="javascript:;" ng-click="exchange()" class="btn btn-primary">立即兑换</a>
+        </div>
+    </div>
+</div>

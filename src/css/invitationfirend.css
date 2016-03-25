@@ -1,0 +1,23 @@
+body {
+  background: #fff; }
+
+.remind-firend {
+  overflow: hidden; }
+  .remind-firend header {
+    padding: .15rem;
+    border-bottom: 1px solid #d2d2d2; }
+    .remind-firend header img {
+      width: 1.045rem; }
+  .remind-firend section img {
+    display: block;
+    width: 1.77rem;
+    margin: .2rem auto .04rem; }
+
+.scan-code {
+  text-align: center; }
+  .scan-code .c-red {
+    font-size: .14rem; }
+
+.remind-btns {
+  padding: 0 .4rem;
+  margin-top: .81rem; }

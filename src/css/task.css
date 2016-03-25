@@ -1,0 +1,59 @@
+@charset "UTF-8";
+.task-list li {
+  border-bottom: 1px solid #d2d2d2; }
+
+.list-box {
+  display: -webkit-box;
+  display: box;
+  padding: .1rem .15rem;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-box-align: center;
+  box-align: center;
+  background: #fff; }
+  .list-box .l-b-left {
+    height: .5rem;
+    margin-right: .12rem; }
+    .list-box .l-b-left img {
+      width: .5rem;
+      height: .5rem;
+      border-radius: .04rem; }
+  .list-box .l-b-right {
+    display: -webkit-box;
+    display: box;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    -webkit-box-pack: justify;
+    box-pack: justify;
+    -webkit-box-align: center;
+    box-align: center; }
+    .list-box .l-b-right .l-b-des {
+      width: 1.6rem; }
+      .list-box .l-b-right .l-b-des h2 {
+        margin-bottom: .03rem;
+        line-height: .16rem;
+        font-size: .16rem;
+        color: #333; }
+      .list-box .l-b-right .l-b-des p {
+        line-height: .16rem;
+        font-size: .13rem;
+        color: #b2b2b2; }
+    .list-box .l-b-right .l-b-point {
+      padding-right: .19rem;
+      font-size: .13rem; }
+  .list-box.disabled {
+    background: #f2f2f2; }
+    .list-box.disabled .l-b-right .l-b-point {
+      color: #b2b2b2; }
+
+/* 图片原型 */
+.radius-half .l-b-left {
+  height: .4rem;
+  margin-right: .1rem; }
+  .radius-half .l-b-left img {
+    width: .4rem;
+    height: .4rem;
+    border-radius: .2rem; }
+
+.radius-half .l-b-right .l-b-point {
+  padding-right: 0; }

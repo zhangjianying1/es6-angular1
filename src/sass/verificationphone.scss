@@ -1,0 +1,50 @@
+body{
+  background: #fff;
+}
+.verification-phone{
+  overflow: hidden;
+  dt{
+    margin: .2rem 0  .3rem;
+    text-align: center;
+    img {
+      display: inline-block;
+      width: 2.2rem;
+    }
+  }
+  dd{
+    padding: 0 .3rem;
+    margin-top: .15rem;
+  }
+}
+.icon-phone{
+  width: .32rem;
+  height: .31rem;
+  border-right: 1px solid #ccc;
+  background-image: url(../images/icon-phone.png);
+}
+.icon-verificationcode{
+  @extend .icon-phone;
+  background-image: url(../images/icon-verificationcode.png);
+}
+.send-btn{
+  width: .97rem;
+  height: .27rem;
+  line-height: .27rem;
+  text-align: center;
+  font-size: .13rem;
+  position: absolute;
+  top: 50%;
+  right: .08rem;
+  background: #f35a52;
+  border-radius: .15rem;
+  color: #fff;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  &.disabled{
+    background: #ddd;
+  }
+}
+/* 提交 */
+.v-p-btn{
+  margin-top: .47rem;
+}

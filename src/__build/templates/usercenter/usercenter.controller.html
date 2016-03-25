@@ -1,0 +1,108 @@
+<div class="usercenter">
+    <section class="user-msg">
+        <div class="user-photo">
+            <img src="../images/task-ban.png" />
+        </div>
+        <div class="user-name">
+            <h2>xin</h2>
+            <p>ID：{{vm.id}}</p>
+        </div>
+    </section>
+    <section>
+        <a href="#/invitationfriend" class="bor-btn">
+            <i class="icon icon-code"></i>
+            <span>邀请二维码</span>
+        </a>
+    </section>
+    <section>
+        <ul class="nav-list">
+            <li>
+                <div class="nav-box">
+                    <div class="nav-icon">
+                        <i class="icon icon-taskremind"></i>
+                    </div>
+                    <div class="nav-tit">
+                        {{ vm.bBtn ? '邀请提醒' : 'fdf'}}
+                    </div>
+                </div>
+                <switchbtn bBtn="vm.bBtn"  remind="vm.remind()"></switchbtn>
+            </li>
+            <li>
+                <userinformation realName="vm.realName">
+                    <a href="javascript:;" class="react go-to">
+                        <div class="nav-box">
+                            <div class="nav-icon">
+                                <i class="icon icon-prefect"></i>
+                            </div>
+                            <div class="nav-tit">
+                                {{ vm.realName ? '修改身份信息' : '完善身份信息'}}
+                            </div>
+                            <div class="nav-tips">
+                                {{ vm.realName ? vm.realName : ''}}
+                            </div>
+                        </div>
+                    </a>
+                </userinformation>
+            </li>
+            <li>
+                <a href="#/verificationphone/{{vm.mobile ? vm.mobile : 0}}" class="react go-to">
+                    <div class="nav-box">
+                        <div class="nav-icon">
+                            <i class="icon icon-addmobile"></i>
+                        </div>
+                        <div class="nav-tit">
+                            {{ vm.mobile ? '修改手机号码' : '添加手机号码'}}
+                        </div>
+                        <div class="nav-tips">
+                            {{ vm.mobile ? vm.mobile : ''}}
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <ul class="nav-list">
+            <li>
+                <a href="#/taskrecord" class="react go-to">
+                    <div class="nav-box">
+                        <div class="nav-icon">
+                            <i class="icon icon-taskrecord"></i>
+                        </div>
+                        <div class="nav-tit">
+                            任务记录
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#/invitationrecord" class="react go-to">
+                    <div class="nav-box">
+                        <div class="nav-icon">
+                            <i class="icon icon-remindrecord"></i>
+                        </div>
+                        <div class="nav-tit">
+                            邀请记录
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#/exchangerecord" class="react go-to">
+                    <div class="nav-box">
+                        <div class="nav-icon">
+                            <i class="icon icon-exchange"></i>
+                        </div>
+                        <div class="nav-tit">
+                            兑换记录
+                        </div>
+                        <div class="nav-tips">
+                            10:00元
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+</div>
+
+

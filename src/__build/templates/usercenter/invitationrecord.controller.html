@@ -1,0 +1,61 @@
+<div class="invitation-record">
+
+    <tab activeDefault="vm.activeDefault">
+        <panle title="正在邀请" class="t-b-main">
+            <!--<p class="not-record">您还没有邀请朋友</p>-->
+            <dorpdown urls="{{vm.urls1}}">
+            <dl class="">
+                <dt class="show-time">
+                    <em class="fr">2人</em><time>2016年2月五日</time>
+                </dt>
+                <dd>
+                    <ul class="task-list">
+                        <li ng-repeat="invitation in vm.invitationingData">
+                            <div class="list-box radius-half">
+                                <div class="l-b-left">
+                                    <img src="../images/task-ban.png" />
+                                </div>
+                                <div class="l-b-right">
+                                    <div class="l-b-des">
+                                        <h2>聚会苏</h2>
+                                    </div>
+                                    <div class="l-b-point c-red">+200券点</div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </dd>
+            </dl>
+            </dorpdown>
+            </panle>
+            <panle title="邀请成功">
+            <dorpdown urls="{{vm.urls2}}">
+            <dl class="">
+                <dt class="show-time">
+                    <em class="fr">2人</em><time>2016年6月五日</time>
+                </dt>
+                <dd>
+                    <ul class="task-list">
+
+                        <li ng-repeat="invitation in vm.invitationedData">
+                            <div class="list-box radius-half">
+                                <div class="l-b-left">
+                                    <img src="../images/task-ban.png" />
+                                </div>
+                                <div class="l-b-right">
+                                    <div class="l-b-des">
+                                        <h2>聚会苏</h2>
+                                    </div>
+                                    <div class="l-b-point c-red">+200券点</div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </dd>
+            </dl>
+            </dorpdown>
+        </panle>
+    </tab>
+</div>

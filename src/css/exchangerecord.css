@@ -1,0 +1,40 @@
+.exchange-list dt {
+  background: #fff; }
+
+.exchange-list dd {
+  margin: .1rem .1rem 0;
+  background: #fff; }
+
+.coupon-box {
+  border-radius: .04rem;
+  background-image: url(../images/coupon-bg.png);
+  backgrouns-clip: content-box;
+  background-repeat: repeat-x;
+  background-size: .055rem .165rem;
+  overflow: hidden; }
+  .coupon-box .coupon-detail {
+    display: -webkit-box;
+    display: box;
+    padding: 0 .06rem .04rem;
+    margin: .15rem .04rem 0;
+    border-bottom: 1px dashed #d2d2d2;
+    background-image: url(../images/exchange-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: .36rem .25rem;
+    -webkit-box-pack: justify;
+    box-pack: justify; }
+    .coupon-box .coupon-detail .coupon-price {
+      text-align: right; }
+  .coupon-box .coupon-code {
+    padding-left: .1rem;
+    line-height: .21rem;
+    color: #aaa; }
+
+.coupon-number {
+  margin-top: -.02rem;
+  font-size: .27rem;
+  line-height: .30rem; }
+
+.fs-19 {
+  font-size: .19rem; }

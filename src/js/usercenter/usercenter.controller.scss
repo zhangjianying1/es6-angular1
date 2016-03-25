@@ -1,0 +1,113 @@
+.user-msg{
+  display: -webkit-box;
+  display: box;
+  height: 1.14rem;
+  padding: 0 .15rem;
+  -webkit-box-align: center;
+  box-align: center;
+  background-image: url('../../images/user-msg.png');
+  background-size: cover;
+  box-shadow: 0px 3px 3px rgba(7,0,2, .2);
+  .user-photo{
+    width: .67rem;
+    height: .67rem;
+    border: .02rem solid #db696a;
+    margin-right: .24rem;
+    box-shadow: 0px 0px 3px #d12731;
+    border-radius: 50%;
+    img{
+      width: .63rem;
+      height: .63rem;
+      border-radius: 50%;
+    }
+  }
+  .user-name{
+    color: #fff;
+    h2{
+      font-size: .22rem;
+    }
+    p{
+      font-size: .16rem;
+    }
+  }
+}
+.bor-btn{
+  display: -webkit-box;
+  display: box;
+  height: .49rem;
+  border: 1px solid #f35a52;
+  margin: .1rem .15rem;
+  border-radius: .04rem;
+  -webkit-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  font-size: .16rem;
+  color: #f35a52;
+  text-align: center;
+  background: #fff;
+}
+.icon-code{
+  width: .22rem;
+  height: .215rem;
+  background-image: url(../../images/icon-code.png);
+}
+.icon-taskremind{
+  background-image: url(../../images/icon-taskremind.png);
+}
+.icon-prefect{
+  background-image: url(../../images/icon-prefect.png);
+}
+.icon-addmobile{
+  background-image: url(../../images/icon-addmobile.png);
+}
+.icon-taskrecord{
+  background-image: url(../../images/icon-taskrecord.png);
+}
+.icon-remindrecord{
+  background-image: url(../../images/icon-remindrecord.png);
+}
+.icon-exchange{
+  background-image: url(../../images/icon-exchange.png);
+}
+.icon-switch{
+  width: .41rem;
+  height: .24rem;
+  background: #d2d2d2;
+  border-radius: .11rem;
+  position: absolute;
+  right: .15rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  &:after{
+    display: inline-block;
+    content: "";
+    width: .22rem;
+    height: .22rem;
+    border-radius: .11rem;
+    background: #fff;
+    -webkit-transform: translate3d(.01rem , .01rem , 0);
+    transform: translate3d(.01rem , .01rem , 0);
+  }
+  &.transOpen{
+    background: #f25a52;
+    &:after{
+      -webkit-transform: translate3d(.18rem , .01rem , 0);
+      transform: translate3d(.18rem , .01rem , 0);
+    }
+  }
+}
+
+/* 修改个人信息*/
+.modify-user{
+  padding: 0 .19rem .11rem;
+  dt{
+    margin-bottom: .04rem;
+    line-height: .35rem;
+    font-size: .14rem;
+  }
+  dd{
+    margin-bottom: .1rem;
+  }
+}

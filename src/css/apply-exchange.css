@@ -1,0 +1,81 @@
+.apply-exchange .coupon-list {
+  display: -webkit-box;
+  display: box;
+  padding: .19rem .115rem; }
+  .apply-exchange .coupon-list .coupon-box {
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    margin: 0 .035rem;
+    border-radius: .04rem;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 2px rgba(7, 0, 2, 0.12);
+    overflow: hidden;
+    background-clip: content-box; }
+    .apply-exchange .coupon-list .coupon-box .coupon-point {
+      height: .275rem;
+      background: url(../images/coupon-original.png) repeat-x;
+      background-size: .055rem .275rem;
+      font-size: .14rem;
+      color: #fff; }
+    .apply-exchange .coupon-list .coupon-box .coupon-price {
+      line-height: .345rem;
+      font-size: .3rem;
+      color: #aaa; }
+      .apply-exchange .coupon-list .coupon-box .coupon-price i {
+        font-size: .18rem; }
+    .apply-exchange .coupon-list .coupon-box.active .coupon-point {
+      background: url(../images/coupon-active.png) repeat-x;
+      background-size: .055rem .275rem; }
+    .apply-exchange .coupon-list .coupon-box.active .coupon-price {
+      color: #f35a52; }
+    .apply-exchange .coupon-list .coupon-box.disabled .coupon-point {
+      background: url(../images/coupon-disabled.png) repeat-x;
+      background-size: .055rem .275rem; }
+    .apply-exchange .coupon-list .coupon-box.disabled .coupon-price {
+      color: #ddd; }
+
+.apply-exchange .coupon-exchange {
+  border-top: 1px solid #d2d2d2; }
+  .apply-exchange .coupon-exchange p {
+    padding: .1rem .15rem;
+    font-size: .13rem;
+    line-height: .22rem; }
+
+.modal-list {
+  display: -webkit-box;
+  display: box;
+  height: .5rem;
+  padding: 0 .15rem;
+  border-bottom: 1px solid #d2d2d2;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+  -webkit-box-align: center;
+  box-align: center;
+  background: #fff;
+  font-size: .16rem; }
+
+.count-control {
+  display: -webkit-box;
+  display: box; }
+  .count-control em {
+    display: block;
+    width: .33rem;
+    height: .3rem;
+    line-height: .3rem;
+    background: #f5f5f5;
+    text-align: center;
+    color: #999;
+    font-weight: bold; }
+  .count-control input {
+    width: .38rem;
+    height: .3rem;
+    border: none;
+    margin: 0 1px;
+    background: #f5f5f5;
+    text-align: center;
+    font-size: .16rem;
+    color: #333; }
+
+.immediately-exchange {
+  padding: 1.65rem .3rem 0; }

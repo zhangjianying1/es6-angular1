@@ -1,0 +1,63 @@
+
+.income-query{
+  .income-query-ban {
+    background: #fff;
+    img {
+      display: block;
+      width: 2.2rem;
+      margin: 0 auto;
+    }
+  }
+  .coupon-count{
+    padding: .15rem 0 .08rem;
+    text-align: center;
+    background: #fff;
+    h3{
+      font-size: .14rem;
+    }
+    .c-red{
+      line-height: .38rem;
+      font-size: .3rem;
+    }
+  }
+  .coupon-detail{
+    display: -webkit-box;
+    display: box;
+    height: .5rem;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+    -webkit-box-align: center;
+    box-align: center;
+    background: #fff;
+    & > div{
+      height: .32rem;
+      -webkit-box-flex: 1;
+      box-flex: 1;
+      text-align: center;
+      &:first-child{
+        border-right: 1px solid #d2d2d2;
+      }
+    }
+    .coupon-number{
+      font-size: .17rem;
+      line-height: .17rem;
+      & + p{
+        line-height: .18rem;
+      }
+    }
+  }
+  .income-nav{
+    margin-top: .1rem;
+  }
+}
+.exchange-btns{
+  padding: 0 .3rem;
+  margin-top: .5rem;
+}
+.icon-taskincome{
+  background-image: url(../../images/icon-taskincome.png);
+}
+.icon-remindincome{
+  background-image: url(../../images/icon-prefect.png);
+}
+

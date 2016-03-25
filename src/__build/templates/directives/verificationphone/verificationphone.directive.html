@@ -1,0 +1,27 @@
+<form name="verification" novalidate ng-submit="submitFN(mobile , code)">
+
+    <dl>
+        <dt>
+            <img src="../images/verification-bg.png">
+        </dt>
+        <dd>
+            <div class="input-box">
+                <label class="icon icon-phone"></label>
+                <input class="big-input" type="tel" ng-model="mobile" placeholder="请输入手机号" required />
+            </div>
+        </dd>
+        <dd>
+            <div class="input-box">
+                <label class="icon icon-verificationcode"></label>
+                <input class="big-input" type="tel" ng-model="code" placeholder="请输入验证码" required/>
+                <span class="send-btn" ng-click="getCode(mobile)">{{sendBtnT}}</span>
+                <span class="error c-red">{{errorT}}</span>
+            </div>
+        </dd>
+        <dd>
+            <div class="v-p-btn">
+                <button type="submit" class="btn btn-primary" ng-disabled="verification.$invalid">提交</button>
+            </div>
+        </dd>
+    </dl>
+</form>
